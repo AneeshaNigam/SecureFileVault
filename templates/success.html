@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Successful</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Successful!</h1>
+        
+        <div class="alert alert-success">
+            Your file has been securely stored.
+        </div>
+        
+        <div class="file-info">
+            <p><strong>File Name:</strong> {{ filename }}</p>
+            <p><strong>File URL:</strong> <a href="{{ file_url }}" target="_blank">{{ file_url }}</a></p>
+            <p><strong>Upload Time:</strong> {{ upload_time }}</p>
+        </div>
+        
+        <a href="{{ url_for('index') }}" class="btn">Upload Another File</a>
+    </div>
+</body>
+</html>

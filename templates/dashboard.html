@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Secure File Vault</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>File Management Dashboard</h1>
+        <div class="dashboard-actions">
+            <a href="{{ url_for('index') }}" class="btn">Upload New File</a>
+            <a href="{{ url_for('logout') }}" class="btn btn-logout">Logout</a>
+        </div>
+        
+        <div class="stats">
+            <h2>Storage Statistics</h2>
+            <!-- Placeholder for dynamic stats -->
+            <p>Total Files: Coming Soon</p>
+            <p>Storage Used: Coming Soon</p>
+        </div>
+    </div>
+</body>
+</html>

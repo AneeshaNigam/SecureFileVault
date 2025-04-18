@@ -1,6 +1,46 @@
-venv/
+# Python
 __pycache__/
-.env
-uploads/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
+# Virtual environment
+venv/
+ENV/
+env/
+.env/
+
+# IDE
+.vscode/
+.idea/
+
+# Debug
+*.log
+
+# Local uploads
+uploads/
+
+# Environment variables
+.env
+*.env
+
+# AWS credentials
+*.aws
+aws/
+awscliv2.zip
